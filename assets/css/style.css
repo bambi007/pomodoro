@@ -37,9 +37,11 @@ body {
 .container .controls button {
   outline: none;
   border: 2px solid white;
+  margin: 0 auto;
+  margin-top: 30px;
   background: white;
   width: 250px;
-  padding: 15px;
+  height: 60px;
   border-radius: 5px;
   font-size: 35px;
   text-transform: uppercase;
@@ -52,5 +54,17 @@ body {
 .container .controls button:hover {
   background: none;
   color: white;
+}
+
+.container .controls .start {
+  display: none;
+}
+
+.container .controls .pause {
+  display: none;
+}
+
+.container .controls .active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -35,10 +35,12 @@ body {
         button {
             outline: none;
             border: 2px solid white;
+            margin: 0 auto;
+            margin-top: 30px;
 
             background: white;
             width: 250px;
-            padding: 15px;
+            height: 60px;
             border-radius: 5px;
 
             font-size: 35px;
@@ -54,5 +56,18 @@ body {
 
             }
         }
+
+        .start {
+            display: none;
+        }
+
+        .pause {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
     }
 }
