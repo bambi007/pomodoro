@@ -1,0 +1,56 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  background: tomato;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: #ffffff36;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.container h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  font-size: 120px;
+}
+
+.container .controls {
+  margin-top: 50px;
+}
+
+.container .controls button {
+  outline: none;
+  border: 2px solid white;
+  background: white;
+  width: 250px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: tomato;
+  font-family: 'Ubuntu Mono', monospace;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+.container .controls button:hover {
+  background: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
