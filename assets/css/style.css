@@ -1,3 +1,68 @@
+.tabs {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 30px;
+}
+
+.tabs .container {
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: #ffffff36;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tabs .container .tab {
+  background: #ffffff83;
+  color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+}
+
+.tabs .container .tab:hover {
+  background: none;
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+  color: white;
+}
+
+.tabs .container .tab.active {
+  background: none;
+  color: white;
+}
+
+.tabs .container .tab.tomato {
+  color: tomato;
+}
+
+.tabs .container .tab.teal {
+  color: teal;
+}
+
+.tabs .container .tabs-content {
+  display: none;
+  padding: 100px 40px;
+  height: 100%;
+  color: white;
+}
+
+.tabs .container .tabs-content.active {
+  display: block;
+}
+
+.tabs .container .tabs-content h3 {
+  font-size: 30px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,28 +73,12 @@
 body {
   min-height: 100%;
   min-width: 100%;
-  background: #ff6347;
+  background: tomato;
+  color: tomato;
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-transition: background 0.7s;
   transition: background 0.7s;
-}
-
-.container {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 80px;
-  background: #ffffff36;
-  border-radius: 20px;
-  overflow: hidden;
-  text-align: center;
-  padding: 70px 30px;
-}
-
-.container h1 {
-  font-family: 'Ubuntu Mono', monospace;
-  color: white;
-  font-size: 120px;
 }
 
 .container .controls {
@@ -42,24 +91,30 @@ body {
   border: 2px solid white;
   margin: 0 auto;
   margin-top: 30px;
-  background: white;
+  background: none;
   width: 250px;
   height: 60px;
   border-radius: 5px;
   font-size: 30px;
   text-transform: uppercase;
-  color: tomato;
+  color: white;
   font-family: 'Ubuntu Mono', monospace;
   -webkit-transition: background 0.2s;
   transition: background 0.2s;
 }
 
 .container .controls button:hover {
-  background: none;
-  color: white;
+  background: white;
+  color: gray;
 }
 
 .container .controls .active {
   display: block;
+}
+
+.container h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: white;
+  font-size: 120px;
 }
 /*# sourceMappingURL=style.css.map */

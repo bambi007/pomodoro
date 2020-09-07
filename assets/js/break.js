@@ -1,6 +1,11 @@
-let startButton = document.getElementsByClassName('start')[0];
-let pauseButton = document.getElementsByClassName('pause')[0];
-let stopButton = document.getElementsByClassName('stop')[0];
+let startButton = document.getElementsByClassName('br-start')[0];
+let pauseButton = document.getElementsByClassName('br-pause')[0];
+let stopButton = document.getElementsByClassName('br-stop')[0];
+
+// window.onload = function () {
+//     document.body.style.backgroundColor = "black";
+// };
+
 
 startButton.addEventListener("click", function (event) {
     postMessage('start');
@@ -21,7 +26,7 @@ stopButton.addEventListener("click", function (event) {
     postMessage('reset')
 })
 
-let minutes = 24;
+let minutes = 4;
 let seconds = 59;
 let timeLeft = (minutes + 1) * 60;
 

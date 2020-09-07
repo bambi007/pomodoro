@@ -1,3 +1,5 @@
+@import "parts/tabs";
+
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -7,28 +9,14 @@
 body {
     min-height: 100%;
     min-width: 100%;
-    background: #ff6347;
+    background: tomato;
+    color: tomato;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     transition: background 0.7s;
 }
 
 .container {
-    max-width: 500px;
-    margin: 0 auto;
-    margin-top: 80px;
-    background: #ffffff36;
-    border-radius: 20px;
-    overflow: hidden;
-    text-align: center;
-    padding: 70px 30px;
-
-
-    h1 {
-        font-family: 'Ubuntu Mono', monospace;
-        color: white;
-        font-size: 120px;
-    }
 
     .controls {
         margin-top: 50px;
@@ -40,22 +28,21 @@ body {
             margin: 0 auto;
             margin-top: 30px;
 
-            background: white;
+            background: none;
             width: 250px;
             height: 60px;
             border-radius: 5px;
 
             font-size: 30px;
             text-transform: uppercase;
-            color: tomato;
+            color: white;
             font-family: 'Ubuntu Mono', monospace;
 
             transition: background 0.2s;
 
             &:hover {
-                background: none;
-                color: white;
-
+                background: white;
+                color: gray;
             }
         }
 
@@ -63,5 +50,11 @@ body {
             display: block;
         }
 
+    }
+
+    h1 {
+        font-family: 'Ubuntu Mono', monospace;
+        color: white;
+        font-size: 120px;
     }
 }
