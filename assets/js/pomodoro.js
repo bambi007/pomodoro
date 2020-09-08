@@ -3,22 +3,21 @@ let pomoPauseButton = document.getElementsByClassName('pomo-pause')[0];
 let pomoStopButton = document.getElementsByClassName('pomo-stop')[0];
 
 pomoStartButton.addEventListener("click", function (event) {
-    postMessage('start');
+    postMessage('pomodoro-start');
     pomoPauseButton.classList.add('active')
     pomoStartButton.classList.remove('active')
 })
 
 pomoPauseButton.addEventListener("click", function (event) {
-    postMessage('pause');
+    postMessage('pomodoro-pause');
     pomoPauseButton.classList.remove('active')
     pomoStartButton.classList.add('active')
 })
 
 pomoStopButton.addEventListener("click", function (event) {
-    postMessage('stop')
+    postMessage('pomodoro-stop')
     pomoPauseButton.classList.remove('active')
     pomoStartButton.classList.add('active')
-    postMessage('reset')
 })
 
 let pomoMinutes = 24;
@@ -30,7 +29,7 @@ window.addEventListener('message', function receiveMessage(event) {
     console.log('got: ' + event.data)
 
     switch (event.data) {
-        case 'start':
+        case 'pomodoro-start':
 
             if (pomodoroTimeLeft > 0) {
 
@@ -64,11 +63,11 @@ window.addEventListener('message', function receiveMessage(event) {
 
             break;
 
-        case 'pause':
+        case 'pomodoro-pause':
             clearInterval(pomoTimer);
             break;
 
-        case 'stop':
+        case 'pomodoro-stop':
             pomodoroTimeLeft = 0;
             window.location.reload(true);
             break;
