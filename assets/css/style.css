@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .tabs .container {
+    margin-top: 40px;
+  }
+}
+
 .tabs .container .tab {
   background: #ffffff83;
   color: inherit;

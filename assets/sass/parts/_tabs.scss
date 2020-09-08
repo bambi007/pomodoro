@@ -2,7 +2,6 @@
     position: fixed;
     min-height: 100%;
     min-width: 100%;
-
     padding: 20px;
 
     .container {
@@ -15,11 +14,10 @@
         border-radius: 20px;
         overflow: hidden;
         text-align: center;
-        // padsding: 70px 30px;
 
-        // @media(min-width: 901px) {
-        //     overflow-y: auto;
-        // }
+        @media(max-width: 425px) {
+            margin-top: 40px;
+        }
 
         .tab {
             background: #ffffff83;
